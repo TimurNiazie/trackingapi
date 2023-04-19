@@ -1,0 +1,112 @@
+<!DOCTYPE html>  //create error page, data from json and if it doesn't load as a 200 then redirect the user to a page not found. USE JSON FOR SOMETHING IDK
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/pictures.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <title>Investment Website</title>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg bg-secondary navbar-dark">
+    <div class="container">
+      <a href="homepage.html" class="navbar-brand">Niazie LLC</a>
+
+      <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="funds.html" class="nav-link">Different Funds</a>
+          </li>
+          <li class="nav-item">
+            <a href="news.html" class="nav-link">Podcast</a>
+          </li>
+
+        </ul>
+
+    </div>
+    </div>
+  </nav>
+
+  <section class="bg-secondary text-dark p-5 text-center text-sm-smart">
+    <div class="container">
+      <div class="d-sm-flex">
+        <div class="header-text">
+          <h1>Be <span class="text-warning">Smarter</span></h1>
+          <h1>Invest <span class="text-warning">Better</span></h1>
+          <h1>With <span class="text-warning">Niazie</span></h1>
+        </div>
+        <img class="img-fluid" src="invest.png">
+        <p class="lead my-4 text-light">We focus on making the best possible investments for our clients 
+          and predicting the trends that could take place within the market. Get ahead of the curve
+          with our new subscription service. <br> <br> <br> <br> <br>
+          <button class="btn btn-info btn-lg">Join Today!</button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark text-light">
+    <div class="d-flex flex-row justify-content-evenly ">
+      <h1>ETH</h1>
+      <h1 id="stock-price">---</h1>
+      <h1>BTC</h1>
+      <h1 id="stock-price2">---</h1>
+      <h1>BNB</h1>
+      <h1 id="stock-price3">---</h1>
+      <h1>GAL</h1>
+      <h1 id="stock-price4">---</h1>
+      <h1>GMT</h1>
+      <h1 id="stock-price5">---</h1>
+    </div>
+  </section>
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-light text-dark p-3">
+              <h5 class="card-title">Cash Funds</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Bank Accounts Have You Trapped?</h6>
+              <p class="card-text">Cash funds may be an option to consider. They often invest in very short-term bonds, or money market instruments, that are essentially banks lending money to each other.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark p-3">
+              <h5 class="card-title">Stocks</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Long Term Shares</h6>
+              <p class="card-text">Investing in stocks is basically buying a share in a company and becoming shareholder. Typically these are more appropriate or long term investments because of the highs and lows that the market could experience.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light text-dark p-3">
+              <h5 class="card-title">Bonds</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Stable and lower risk returns</h6>
+              <p class="card-text">Companies and governments issue these bonds to raise money. You give them a sum of money and they pay you back with interest over a specified period of time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a onclick="addItem('testTitle', 'testDescription')">Click here to get items</a>
+  </section>
+
+
+
+
+  <script src="app.js"> 
+  
+  </script>
+
+</body>
+</html>
